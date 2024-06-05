@@ -14,6 +14,6 @@ Original Live App
 3. Add folders in `public` folder and add images
 4. in app folder create [id] folder and add initial `page.tsx` Detail page
 5. in app folder add `auth` folder and pages with intiial code
-6. in app folder add dashboard folder and initial folders with pages and initial code
+6. in app folder add components/dashboard folder with pages and initial code
 7. in app folder add products folder and page with initial code
 8. in app folder add `AppWrapper.tsx` page

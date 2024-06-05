@@ -1,5 +1,9 @@
-import Image from 'next/image';
+'use client';
 
-export default function Home() {
-	return <div>HELLO WORLD!</div>;
-}
+interface pageProps {}
+
+const Home: React.FC<pageProps> = ({}) => {
+	return <div>Home Page</div>;
+};
+
+export default Home;
