@@ -1,27 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Young+Serif&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--foreground-rgb: 0, 0, 0;
-	--background-start-rgb: 214, 219, 220;
-	--background-end-rgb: 255, 255, 255;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Young Serif', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground-rgb: 255, 255, 255;
-		--background-start-rgb: 0, 0, 0;
-		--background-end-rgb: 0, 0, 0;
+@layer base {
+	html {
+		font-family: 'Poppins', sans-serif;
 	}
 }
 
-body {
-	color: rgb(var(--foreground-rgb));
+p,
+span {
+	@apply text-slate-500;
 }
 
-@layer utilities {
-	.text-balance {
-		text-wrap: balance;
-	}
+input {
+	@apply focus:ring-black focus:border-black focus:outline-black;
+}
+
+::selection {
+	@apply bg-black text-white;
+}
+
+[type='text'],
+[type='email'],
+[type='password'],
+[type='number'],
+[type='tel'],
+[type='search'] {
+	@apply form-input rounded rounded-tl-none text-sm;
+}
+
+input,
+textarea,
+select {
+	@apply focus:!ring-0 focus:!outline-0 focus:!outline-offset-0 focus:!border-[#6fd1f9];
+}
+
+textarea {
+	@apply form-textarea rounded rounded-tl-none text-sm resize-none;
+}
+
+select {
+	@apply form-select rounded rounded-tl-none text-sm resize-none;
 }
