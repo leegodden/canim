@@ -12,3 +12,4 @@ Original Live App
 1. INSTALL NEXTJS
 2. in root create `.vscode` folder and add `cSpell.words.json`
 3. Add folders in `public` folder and add images
+4. in app folder create [id] folder and add initial page.tsx Detail

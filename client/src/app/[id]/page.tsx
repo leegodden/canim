@@ -1,14 +1,14 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import React, { useEffect } from 'react';
+import React, { FC } from 'react';
 
-const Detail = () => {
-	const { id } = useParams();
+interface pageProps {}
 
+const Detail: React.FC<pageProps> = ({}) => {
 	return (
 		<div className='h-full w-full flex flex-col gap-y-20'>
-			<div className='grid grid-cols-12 gap-8'>Detail</div>
+			<div className='grid grid-cols-12 gap-8'>Details</div>
 		</div>
 	);
 };
