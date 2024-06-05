@@ -1,9 +1,14 @@
 'use client';
 
+import Main from './components/shared/layouts/Main';
 interface pageProps {}
 
 const Home: React.FC<pageProps> = ({}) => {
-	return <div>Home Page</div>;
+	return (
+		<>
+			<Main />
+		</>
+	);
 };
 
 export default Home;
