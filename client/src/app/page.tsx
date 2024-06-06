@@ -1,7 +1,7 @@
 'use client';
 
-import Main from './components/shared/layouts/Main';
-import Banner1 from './components/home/Banner1';
+import Main from '@/components/shared/layouts/Main';
+import Banner1 from '@/components/home/Banner1';
 interface pageProps {}
 
 const Home: React.FC<pageProps> = ({}) => {
