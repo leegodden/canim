@@ -10,6 +10,7 @@ const Loading = () => {
 				height={540}
 				width={960}
 				className='max-w-full'
+				unoptimized={true}
 			/>
 		</section>
 	);

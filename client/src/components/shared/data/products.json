@@ -1,0 +1,77 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"title": "AcoustiPeak Pro: Immerse in Unparalleled Audio Excellence",
+			"price": 99,
+			"thumbnail": {
+				"url": "/assets/home/newArrivals/headset3.jpg",
+				"public_id": "headset_main"
+			},
+			"gallery": [
+				{
+					"url": "/assets/home/newArrivals/headset4_thumb.jpg",
+					"public_id": "headset4_thumb"
+				},
+				{
+					"url": "/assets/home/newArrivals/headset3_thumb.jpg",
+					"public_id": "headset_thumb"
+				}
+			],
+			"category": {
+				"tags": ["electronics", "audio"],
+				"title": "Electronics",
+				"keynotes": ["Top quality sound and reliability.", "High-quality audio."]
+			},
+			"brand": {
+				"name": "HyperX",
+				"tags": ["gaming", "audio"],
+				"title": "HyperX",
+				"keynotes": ["Optimal gaming experience.", "For comfort and reliability."]
+			},
+			"store": {
+				"name": "Tech Gear",
+				"tags": ["reliable", "popular"],
+				"title": "Tech Gear Store",
+				"keynotes": [
+					"Shaping tomorrow's ideas today.",
+					"Explore endless possibilities."
+				]
+			},
+			"variations": {
+				"colors": ["black", "blue", "red"],
+				"sizes": ["small", "medium", "large"]
+			},
+			"campaign": {
+				"state": "on-sale",
+				"title": "Summer Sale - Up to 50% Off!"
+			},
+			"summary": "Introducing the AcoustiPeak Pro headset, your gateway to an unparalleled audio experience. Immerse yourself in the pinnacle of sound excellence, where cutting-edge technology meets ergonomic design. With precision-tuned acoustics, this headset delivers crystal-clear audio across diverse frequencies. The comfort-centric design ensures extended usage without compromise. Whether gaming, streaming, or enjoying music, the AcoustiPeak Pro elevates every auditory moment. Join a new dimension.",
+			"features": [
+				{
+					"title": "Comfort Design",
+					"content": "Lightweight design with soft padding for maximum comfort."
+				},
+				{
+					"title": "Sound Quality",
+					"content": "Enhanced audio with noise cancellation features."
+				}
+			],
+			"reviews": [
+				{
+					"comment": "Great headset, high-quality sound and comfortable fit!",
+					"rating": 5,
+					"createdAt": "2024-06-01T12:00:00Z",
+					"reviewer": {
+						"name": "Jane Doe",
+						"email": "jane.doe@example.com",
+						"avatar": {
+							"url": "/assets/home/jane_doe.jpg",
+							"public_id": "johndoe_avatar"
+						}
+					}
+				}
+			]
+		}
+	]
+}
