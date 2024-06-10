@@ -5,6 +5,7 @@ import { BiCategory, BiChevronDown } from 'react-icons/bi';
 import OutsideClick from '../OutsideClick';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
+import CategoryCard from '../skeletonLoading/CategoryCard';
 
 interface CategoriesProps {}
 
