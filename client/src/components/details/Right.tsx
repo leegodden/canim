@@ -3,66 +3,8 @@ import { AiFillStar } from 'react-icons/ai';
 import CartButton from './CartButton';
 import Description from './Description';
 import Policies from './Policies';
+import { Product } from '../../../types/product';
 import productData from '../shared/data/products.json';
-
-interface Product {
-	id: number;
-	title: string; // Added title field
-	price: number; // Added price field, assuming it should be a number
-	thumbnail?: {
-		url: string;
-		public_id: string;
-	};
-	gallery?: Array<{
-		url: string;
-		public_id: string;
-	}>;
-	category?: {
-		tags: string[];
-		title: string; // Title for the category
-		keynotes: string[]; // Descriptive keynotes for the category
-	};
-	brand?: {
-		name: string;
-		tags: string[];
-		title: string; // Title for the brand
-		keynotes: string[]; // Brand-specific descriptive notes
-	};
-	store?: {
-		name: string;
-		tags: string[];
-		title: string; // Title for the store
-		keynotes: string[]; // Descriptive notes for the store
-	};
-	variations?: {
-		colors: string[];
-		sizes: string[];
-	};
-	campaign?: {
-		state: 'discount' | 'sold-out' | 'arrival' | 'on-sale' | string; // Possible states of a campaign
-		title: string; // Title of the campaign for display
-	};
-	summary: string; // Summary of the product
-	features: Array<{
-		// Array of features for the product
-		title: string;
-		content: string;
-	}>;
-	reviews: Array<{
-		// Array of reviews for the product
-		comment: string;
-		rating: number;
-		createdAt: string; // Date-time string in ISO 8601 format
-		reviewer: {
-			name: string;
-			email: string;
-			avatar: {
-				url: string;
-				public_id: string;
-			};
-		};
-	}>;
-}
 
 interface RightProps {
 	product: Product;

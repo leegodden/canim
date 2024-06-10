@@ -8,6 +8,7 @@ import { useSearchParams } from 'next/navigation';
 import Container from '@/components/shared/Container';
 import Main from '@/components/shared/layouts/Main';
 import productData from '@/components/shared/data/products.json';
+import Relatives from '@/components/details/Relatives';
 
 interface Props {}
 
@@ -41,6 +42,7 @@ const Detail: React.FC<Props> = ({}) => {
 							</>
 						)}
 					</div>
+					<Relatives />
 				</div>
 			</Container>
 		</Main>
