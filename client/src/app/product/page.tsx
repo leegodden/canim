@@ -9,6 +9,7 @@ import Container from '@/components/shared/Container';
 import Main from '@/components/shared/layouts/Main';
 import productData from '@/components/shared/data/products.json';
 import Relatives from '@/components/details/Relatives';
+import Banner2 from '@/components/home/Banner2';
 
 interface Props {}
 
@@ -43,6 +44,7 @@ const Detail: React.FC<Props> = ({}) => {
 						)}
 					</div>
 					<Relatives />
+					<Banner2 className={'!px-0'} />
 				</div>
 			</Container>
 		</Main>
