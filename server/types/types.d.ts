@@ -1,5 +1,14 @@
 import 'colors';
 import mongoose, { Schema, Document } from 'mongoose';
+import { Request } from 'express';
+
+// Module augmentation for Express
+declare module 'express-serve-static-core' {
+	// Extend the existing interface of 'Request'
+	interface Request {
+		user?: any;
+	}
+}
 
 declare module 'colors' {
 	interface Color {
@@ -185,4 +194,24 @@ interface IUser extends Document {
 	updatedAt?: Date;
 	encryptedPassword(password: string): Promise<string>;
 	comparePassword(candidatePassword: string, hash: string): Promise<boolean>;
+}
+
+/* signUp Request */
+export interface SignUpRequest extends Request {
+	body: {
+		name: string;
+		email: string;
+		password: string;
+		phone: string;
+	};
+	file?: any;
+}
+
+/* UserData interface - for generating token */
+export interface UserData {
+	_id: string;
+	name: string;
+	email: string;
+	role: string;
+	status: string;
 }

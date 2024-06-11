@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import userRouter from './routes/user.route';
 
 // Create an Express application
 const app = express();
@@ -13,6 +14,10 @@ app.use(
 		optionsSuccessStatus: 204,
 	})
 );
+
+app.use(express.json());
+
+app.use('/api/user', userRouter);
 
 // Health Check Route
 app.get('/healthcheck', (req, res) => {
