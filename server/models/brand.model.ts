@@ -1,9 +1,9 @@
 import mongoose, { Schema, Document } from 'mongoose';
-import { BrandDocument } from '../types/types';
 import validator from 'validator';
 const { ObjectId } = mongoose.Schema.Types;
+import { IBrand } from '../types/types';
 
-const brandSchema = new Schema<BrandDocument>(
+const brandSchema = new Schema<IBrand>(
 	{
 		title: {
 			type: String,
@@ -57,7 +57,7 @@ const brandSchema = new Schema<BrandDocument>(
 );
 
 // Middleware to format title and tags
-brandSchema.pre<BrandDocument>('save', function (next) {
+brandSchema.pre<IBrand>('save', function (next) {
 	// Capitalize first letter in each word of the title
 	this.title = this.title
 		.split(' ')
@@ -72,6 +72,6 @@ brandSchema.pre<BrandDocument>('save', function (next) {
 	next();
 });
 
-const Brand = mongoose.model<BrandDocument>('Brand', brandSchema);
+const Brand = mongoose.model<IBrand>('Brand', brandSchema);
 
 export default Brand;
