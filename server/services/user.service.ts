@@ -38,7 +38,7 @@ export const signUp = async (req: SignUpRequest, res: Response) => {
 	// Responding with status 201 and a JSON object
 	res.status(201).json({
 		acknowledgment: true,
-		message: 'Crewated',
+		message: 'Created',
 		description: 'user created successfully',
 	});
 

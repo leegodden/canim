@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
+dotenv.config();
+
 import userRouter from './routes/user.route';
 
 // Create an Express application

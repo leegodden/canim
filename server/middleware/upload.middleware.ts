@@ -6,8 +6,8 @@ import path from 'path';
 /* cloudinary config */
 cloudinary.config({
 	cloud_name: process.env.CLOUD_NAME,
-	api_key: process.env.API_KEY,
-	api_secret: process.env.API_SECRET,
+	api_key: process.env.CLOUDINARY_API_KEY,
+	api_secret: process.env.CLOUDINARY_API_SECRET,
 	secure: true,
 });
 
@@ -15,6 +15,7 @@ const storage = new CloudinaryStorage({
 	cloudinary: cloudinary,
 	params: async (_: any, file: Express.Multer.File) => {
 		return {
+			// folder & id on cloudinary to store images
 			folder: 'canim-template',
 			public_id: `${Date.now()}_${file.originalname
 				.replace(/[^\w\s.-]/g, '')
